@@ -16,8 +16,26 @@
 		+ Tesla
 		+ BMW
 1. Build a testbed / Select datasets
-	+ Datasets
-		+ 
+	+ Datasets: Traffic scenes
+		+ KITTI [[Link]](http://www.cvlibs.net/datasets/kitti/)
+			+ Stereo, Lidar, GPS		
+			+ Classes: Car, Pedestrian, Cyclist
+			+ GT: Bounding box
+		+ Cityscapes [[Link]](https://www.cityscapes-dataset.com/)
+			+ Stereo, Timestamp		
+			+ Groups: flat, human, vehicle, construction, object, nature, sky, void
+			+ GT: Dense pixel-level annotations 
+		+ Virtual KITTI [[Link]](http://www.xrce.xerox.com/Research-Development/Computer-Vision/Proxy-Virtual-Worlds)
+			+ Mono (forward / 15-deg-right, 15-deg-left)
+			+ Classes: Car, Pedestrian, Cyclist
+			+ GT: Bounding box, Instance-level pixel annotations, Optical-flow, Depth	
+			+ Weather conditions: morning, sunset, overcast, fog, rain
+		+ Synthia [[Link]](http://synthia-dataset.net/)
+			+ 8 RGB (form binocular 360 deg), 8 depth sensors
+			+ Classes: misc, sky, building, road, sidewalk, fence, vegetation, pole, car, sign, pedestrian, cyclist, lanemarking
+			+ GT: Instance-level pixel annotations
+			+ Seasons: winter, fall, spring, summer
+			+ Lightings: dynamic light, shadows, day-time, rain, night-time
 2. Implement several algorithms
 3. Evaluation / Comparison / Analysis 
 
